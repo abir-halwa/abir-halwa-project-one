@@ -1,0 +1,479 @@
+/* ****************** setup code starts here ****************** */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visually-hidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+/* /****************** setup code ends here ****************** */
+
+/* ****************** general styles start here ****************** */
+/*  to set the base font-size */
+html {
+    font-size: 62.5%;
+}
+
+/* to style the body tag */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.8rem;
+    color: #0F0F0F;
+    line-height: 2.9rem;
+    text-align: center;
+}
+
+/* to style the wrapper class */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* to reset the margin and padding for some elements */
+body, 
+ul, 
+h1, 
+h2, 
+h3, 
+h4, 
+p, 
+button, 
+input {
+    margin: 0;
+    padding: 0;
+}
+
+/* to remove the list style from any list */
+ul {
+    list-style: none;
+}
+
+/* to style all the links */
+a {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+/* to style all the links when hover or focus  */
+a:hover, a:focus {
+    color: #094154;
+}
+
+/* to style all the images */
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* to style all the buttons */
+button {
+    background-color: #8DD7E9;
+    width: 200px;
+    height: 40px;
+    font-weight: 700;
+    border: none;
+    text-transform: uppercase;
+}
+
+/* to style the buttons when hover or focus */
+button:hover, button:focus {
+    color: #F6F6F6;
+    background-color: #094154;
+}
+
+/* to style the heading(1-4) and the logo */
+h1, 
+h2, 
+h3, 
+h4, 
+.header-top p {
+    font-family: 'Poppins', sans-serif;
+    line-height: 2.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* to style heading 1 */
+h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    margin-top: 25vh;
+    min-height: 45vh;
+}
+
+/* to style heading 2 */
+h2 {
+    font-size: 2.4rem;
+}
+
+/* to style heading 3 */
+h3 {
+    font-size: 2.2rem;
+}
+
+/* to style heading 4 */
+h4 {
+    font-size: 2rem;
+}
+/* ****************** general styles end here ****************** */
+
+/* ****************** header styles start here ****************** */
+/* to style the header */
+header {
+    height: 100vh;
+    background-image: url(./summit-assets/asset-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: #F6F6F6;
+    text-transform: uppercase;
+    padding: 5vh 2%;
+}
+
+/* to style the top part of the header */
+.header-top {
+    text-align: left;
+}
+
+/* to style the logo */
+.header-top p {
+    font-size: 4.2rem;
+    float: left;
+}
+
+/* to style the menu */
+header nav {
+    float: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    font-weight: 700;
+}
+
+/* to style the items in the menu nav */
+.header-top li {
+    float: left;
+    margin-right: 20px;
+}
+
+/* to remove the margin from the last item in the list */
+.header-top li:nth-child(4), 
+.footer-right-col:last-child, 
+.important-links-section li:last-child, 
+.gallery-section li:last-child {
+    margin-right: 0;
+}
+
+/* to style the hamburger menu icon */
+.header-top i {
+    font-size: 4.2rem;
+    visibility: hidden;
+    float: right;
+}
+
+/* to style the text SUMMIt in h1 */
+h1 span {
+    font-size: 10rem;
+    display: block;
+    line-height: 10rem;
+}
+
+/* to style the social media icons */
+.header-bottom a {
+    color: #215A6D;
+}
+
+/* ****************** header styles end here ****************** */
+
+/* ****************** .about-section styles start here ****************** */
+/* to style the div inside the about section */
+.about-section div {
+    width: 60%;
+    display: inline-block;
+}
+
+/* to style some sections */
+.about-section, 
+.about-me-section, 
+.footer-top, 
+.gallery-section {
+    padding: 5% 0;
+}
+
+/* to add a space below each elements of some containers except for the last element */
+.about-section *:not(:last-child), 
+.info-txt *:not(:last-child), 
+.about-me-txt *:not(:last-child) {
+    margin-bottom: 4%;
+}
+/* ****************** .about-section styles end here ****************** */
+
+/* ****************** info-section styles start here ****************** */
+/* to style the info-section */
+.info-section {
+    background-color: #F6F6F6;
+}
+
+/* to style the info-text and info-img divs in the info section */
+.info-txt, 
+.info-img {
+    float: left;
+    width: 50%;
+}
+
+/* to add padding arround the the info-txt */
+.info-txt {
+    padding-left: calc(5vw + 10px);
+    padding-top: calc(7vw + 10px);
+    padding-right: calc(16vw + 10px);
+}
+
+/* to style the buttons in the info-text div  */
+.info-txt button {
+    width: 170px;
+}
+
+/* to style the second row in the info-section */
+.second {
+    clear: both;
+}
+
+/* to float the image to the right in the second row of the info section */
+.second .info-img {
+    float: right;
+}
+
+/* to change the padding of the info-txt in the second row of the info section */
+.second .info-txt {
+    padding-left: calc(16vw + 10px);
+    padding-right: calc( 5vw + 10px);
+}
+/* ****************** info section styles end here ****************** */
+
+/* ****************** .important-links section styles start here ****************** */
+/* to style the .important-links section and the footer */
+.important-links-section,
+footer {
+    background-color: #215A6D;
+    color: #F6F6F6;
+}
+
+/* to style the links list in the .important-links section */
+.important-links-section ul {
+    display: inline-block;     /* change the display to inline-block to enable the text align property  */
+    text-align: center;
+    font-weight: 700;
+    padding: 4% 0;
+}
+
+/* to style the list items of the .important-links section */
+.important-links-section li {
+    float: left;
+    margin-right: 100px;
+}
+
+/* to style the links in the .important-links-section, footer and socil media icons when hover or focus */
+.important-links-section a:hover, .important-links-section:focus,
+footer a:hover, footer a:focus,
+.header-bottom a:hover, .header-bottom a:focus {
+    color: #8DD7E9;
+}
+/* ****************** .important-links section styles end here ****************** */
+
+/* ****************** .about-me section styles start here ****************** */
+/* to style the .about-me-section */
+.about-me-section {
+    text-align: left;
+    background-color: #F6F6F6;
+}
+
+/* to apply float: left on some elemnts */
+.about-me-txt,
+.about-me-img,
+.footer-right-col,
+.footer-left {
+    float: left;
+}
+
+/* to style the about-me image */
+.about-me-img {
+    width: 28%;
+    margin-right: 2%;
+}
+
+/* to style the about-me text */
+.about-me-txt {
+    width: 70%;
+}
+/* ****************** .about-me-section styles end here ****************** */
+
+/* ****************** .gallery-section styles start here ****************** */
+/* to style the gallery images list */
+.gallery-section li {
+    float: left;
+    width: calc((100% - 40px) / 3);
+    margin-right: 20px;
+}
+/* ****************** gallery-section styles end here ****************** */
+
+/* ****************** footer styles start here ****************** */
+/* to style the .footer-top div */
+.footer-top {
+    text-align: left;
+}
+
+/* to style the left part of the .footer-top div */
+.footer-left {
+    width: 50%;
+    margin-right: 3%;
+}
+
+/* to add a space below each direct child in the .footer-left */
+.footer-left > * {
+    margin-bottom: 2%;
+}
+
+/* to style the text box in the footer */
+input {
+    padding: 7px 15px;
+    width: 65%;
+    display: block;
+    float: left;
+    height: 40px;
+    border: none;
+}
+
+/* to style the button in the footer */
+form button {
+    float: left;
+    width: 35%;
+}
+
+/* to style each column in the .footer-right */
+.footer-right-col {
+    width: calc((47% - 30px) / 3);
+    margin-right: 15px;
+}
+
+/* to change the letter case of the links in the footer */
+.footer-right-col:first-child a {
+    text-transform: none;
+}
+
+/* to change the letter case of the links in the recent posts in the footer */
+.footer-right-col:last-child a {
+    text-transform: capitalize;
+}
+
+/* to style the .footer-bottom */
+.footer-bottom {
+    background-color: #094154;
+    padding: 1% 0;
+}
+
+/* to style the copyright pargraph in the footer bottom*/
+.footer-bottom p {
+    font-weight: 700;
+}
+
+/* ****************** footer styles end here ****************** */
+
+/* ****************** media quries start here ****************** */
+@media (max-height: 610px) {
+    h1 {
+        min-height: 35vh;
+    }
+}
+
+@media (max-height: 430px) {
+    .header-top i {
+        visibility: visible;
+        /* to show the hamburger icon */
+    }
+    header nav {
+        display: none;
+        /* to hide any navigation  */
+    }
+}
+
+@media(max-width:1090px) {
+    .info-txt, .second .info-txt {
+        padding: 3%;
+    }
+    .footer-left {
+        width: 100%;
+    }
+    .footer-left {
+        margin-bottom: 4%;
+    }
+    .footer-right-col {
+        width: calc((100% - 30px) / 3);
+    }
+}
+
+@media(max-width:831px) {
+    .about-me-txt, .info-img, .info-txt {
+        width: 100%;
+    }
+    .info-txt, .second .info-txt {
+        padding: 5% 15%;
+    }
+    .about-me-img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 4%;
+    }
+    .about-me-section {
+        text-align: center;
+    }
+    .about-me-section p {
+        text-align: left;
+    }
+    .about-me-img img {
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:600px) {
+    h1 span {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+    }
+    .header-top i {
+        visibility: visible;
+    }
+    header nav, .gallery-section li:last-child {
+        display: none;
+    }
+    .about-section div {
+        width: 100%;
+    }
+    .important-links-section li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 4%;
+    }
+    .gallery-section {
+        margin: 0;
+        width: 100%;
+    }
+    .gallery-section li {
+        margin-right: 0;
+        width: 50%;
+    }
+    .footer-left, .footer-right {
+        text-align: center;
+    }
+    input, form button, .footer-right-col {
+        width: 100%;
+    }
+    .footer-right-col:not(:last-child) {
+        margin-bottom: 4%;
+    }
+}
+/* ****************** media quries end here  ****************** */
